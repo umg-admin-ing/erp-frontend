@@ -28,7 +28,7 @@ const baseNavigation = [
 ];
 
 const adminNavigation = [
-  { name: "Usuarios", to: "#", icon: UsersIcon },
+  { name: "Usuarios", to: "/usuarios", icon: UsersIcon },
 ];
 
 function classNames(...classes) {
