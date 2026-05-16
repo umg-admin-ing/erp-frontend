@@ -3,7 +3,8 @@ import { useLocation, useNavigate } from 'react-router';
 import { login } from '../services/Auth/login';
 import { setAuth } from '../utils/auth';
 
-import Logo from '../../src/assets/logo.jpg';
+import Logo from '../../src/assets/nova/icon.png';
+import Wallpaper from '../../src/assets/nova/wallpaper.jpeg';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -116,7 +117,7 @@ export default function Login() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="flex w-full justify-center rounded-md bg-black px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-gray-800 disabled:opacity-50"
+                  className="flex w-full justify-center rounded-md bg-blue-800 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-gray-800 disabled:opacity-50"
                 >
                   {submitting ? 'Ingresando…' : 'Ingresar'}
                 </button>
@@ -129,7 +130,7 @@ export default function Login() {
       <div className="relative hidden w-0 flex-1 lg:block">
         <img
           alt=""
-          src="https://f4.bcbits.com/img/a0157531155_2.jpg"
+          src={Wallpaper}
           className="absolute inset-0 size-full object-cover"
         />
       </div>

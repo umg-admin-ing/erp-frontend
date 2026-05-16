@@ -21,7 +21,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import { getAuth, clearAuth, isAdmin } from "../../utils/auth";
 
-import Logo from '../../assets/logo.jpg';
+import Logo from '../../assets/nova/watermark.png';
 
 const baseNavigation = [
   { name: "Dashboard", to: "/", icon: ChartPieIcon },
@@ -89,7 +89,7 @@ export default function Layout() {
               </div>
             </TransitionChild>
 
-            <div className="relative flex grow flex-col gap-y-5 overflow-y-auto bg-black px-6 pb-4 ring-1 ring-white/10">
+            <div className="relative flex grow flex-col gap-y-5 overflow-y-auto bg-[#000f37] px-6 pb-4 ring-1 ring-white/10">
               <div className="relative flex h-16 shrink-0 items-center">
                 <img
                   alt="Logo"
@@ -131,13 +131,13 @@ export default function Layout() {
       </Dialog>
 
       {/* Sidebar desktop */}
-      <div className="hidden bg-black ring-1 ring-white/10 lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+      <div className="hidden bg-[#000f37] ring-1 ring-white/10 lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
         <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-black/10 px-6 pb-4">
           <div className="flex h-16 shrink-0 items-center">
             <img
               alt="Logo"
               src={Logo}
-              className="h-12 w-auto"
+              className="h-8 w-auto"
             />
           </div>
           <nav className="flex flex-1 flex-col">
